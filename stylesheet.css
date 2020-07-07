@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'League Spartan';
+	src: url('LeagueSpartan-Bold.ttf') format('truetype');
+}
+body{
+	overflow-x:hidden;
+	scroll-behavior:smooth;
+}
+::-webkit-scrollbar {
+    display: none;
+}
