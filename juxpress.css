@@ -68,7 +68,7 @@ img, object, embed, video {
 	}
 	
 	
-		#juxpressPh {
+	#juxpressPh {
 	position: absolute;
 	margin-top:1.64%;
 	left:50%;
@@ -78,8 +78,8 @@ img, object, embed, video {
 	z-index: 1;
 	}
 	
-	
-		#headerLogo {
+
+	#headerLogo {
 	position: absolute;
 	margin-top:1.484%;
 	margin-left:10.6%;
@@ -89,7 +89,7 @@ img, object, embed, video {
 	}
 	
 	
-		#calender {
+	#calender {
 	position: absolute;
 	margin-top:2.4%;
 	margin-left:80.92%;
@@ -107,26 +107,39 @@ img, object, embed, video {
 		z-index: 2;
 		}
 	
-
-		#hMenu{
+	#illustationTop{
 	display:block;
 	position:absolute;
-	margin-top:17.677vw;
-	max-width: 100%;
-	z-index:1;
+	margin-top:6.4323vw;
+	z-index:0;
+	}
+	
+	#overlayBITop{
+	display:block;
+	position:absolute;
+	margin-top:6.4323vw;
+	z-index:-1;
+	}
+	
+	#hMenu{
+	display:block;
+	position:absolute;
+	width:100vw;
+	margin-top:18.489vw;	
 	}
 		#navBar{
+		display:flex;
 		list-style-type:none;
-		margin-top:-3.307vw;
 		padding-left:0vw;
 		padding-right:0vw;
-		display:flex;
+		margin-top:0vw;
 		max-width:100%;
 		justify-content:space-evenly;
-		z-index:3;
+		z-index:2;
 		}
 		#navBar li{
 		display:block;
+		position:relative;
 		border: 0.234vw solid #000;
 		background-color:#ffcc66;
 		height:2.838vw;
@@ -136,11 +149,15 @@ img, object, embed, video {
 		color:#000;
 		padding:0.703vw;
 		}
-		#li5{background-color:#cc6666!important;}
+		#li4{margin-right:5vw;}
+		#li5{
+		margin-right:2.4vw;
+		background-color:#cc6666!important;
+		}
 		#a5{color:#FFF!important;}
 		
 
-		#overlayUH {
+	#overlayUH {
 	position: absolute;
 	top:21.796vw;
 	clear: both;
@@ -152,9 +169,9 @@ img, object, embed, video {
 	}
 	
 	
-		#headlines {
+	#headlines {
 	position: absolute;
-	top:21.796vw;
+	top:22.608vw;
 	display: block;
 	left:50%;
 	margin-left:-44.97%;
