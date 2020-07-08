@@ -143,6 +143,7 @@ img, object, embed, video {
 		border: 0.234vw solid #000;
 		background-color:#ffcc66;
 		height:2.838vw;
+		cursor:pointer;
 		}
 		#navBar a{
 		display:block;
