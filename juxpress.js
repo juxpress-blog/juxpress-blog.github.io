@@ -81,39 +81,41 @@ var dt = new Date();
 			
 	
 //For refreshing footer:
-	
-/*function refreshFooter(){	
-
-setTimeout(function(){
 	var vw = window.innerWidth;
 	var vh = window.innerHeight;
+
+	var hl = document.getElementById("headlines");
+		var hlT = hl.getBoundingClientRect();
+		var a = hlT.top;
+			
+function refreshFooter(){	
+
+setTimeout(function(){	
 	
 	//Calulating body height and using it to set the "top" value of Document ending:	
-			
-	/*var hl = document.getElementById("headlines");
-		var hlT = hl.getBoundingClientRect();
-	var ns = document.getElementById("news");
-		var nsT = ns.getBoundingClientRect();
-	var ft = document.getElementById("footer");
 	
+	var hl = document.getElementById("headlines");	
+	var ns = document.getElementById("news");
+	
+	var ft = document.getElementById("footer");
 	//For detecting end of document:	
 	/*var de = document.getElementById("documentEnd");	
 	de.style.top = hlT.top + hl.offsetHeight + ns.offsetHeight + "px" ;*/
 	
-	/*var fh = hlT.top + hl.offsetHeight + ns.offsetHeight;
+	var fh =  a + hl.offsetHeight + ns.offsetHeight;
 		var fhpx = fh + "px";
 		var fhvw = fh/vw*100 + "vw";
 	
 	
 	//Defining the placement of the footer:
 	
-	if(fh>=window.innerHeight){ft.style.top=fhvw;}
-	else{ft.style.bottom="0px";}
+	if(fh>=window.innerHeight){ft.style.top=fhpx;}
+	else{ft.style.top="100vh";}
 	
 	refreshFooter();
 },1)
 	
-}*/
+}
 
 
 //For translating content:
@@ -123,14 +125,14 @@ var hml = document.getElementById("hmLeftButtonM");
 var hmr = document.getElementById("hmRightButtonM");
 	
 	var m=0;
-	var td=64.5173/4;
+	var td=64.5173/3;
 	
 
 	window.addEventListener("click",function(f){
 	
 			//Translating content right:
 			if(hml.contains(f.target)){
-				if(m>=-12&&m<0){
+				if(m>=-9&&m<0){
 				for(var i=0;i<tc.length;i++){
 					tc[i].style.transform = "translate("+ td*(m+1) +"vw)";	
 				}
@@ -139,7 +141,7 @@ var hmr = document.getElementById("hmRightButtonM");
 			}
 			//Translating content left:
 			if(hmr.contains(f.target)){
-				if(m>-12&&m<=0){
+				if(m>-9&&m<=0){
 				for(var i=0;i<tc.length;i++){
 					tc[i].style.transform = "translate("+ td*(m-1) +"vw)";
 				}			
@@ -149,4 +151,8 @@ var hmr = document.getElementById("hmRightButtonM");
 
 	})
 
+//Placing the headlines:
+/*var hls = document.getElementById("headlines");
 
+hls.style.top = 44*vw/vh + "vh";
+hls.style.maxHeight = (100-(44*vw/vh)) + "vh";*/
