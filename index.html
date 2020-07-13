@@ -29,27 +29,80 @@ Do the following if you're using your customized build of modernizr (http://www.
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+
 <script src="respond.min.js"></script>
+<script src="juxpress.js" type="text/javascript"></script>
+
 </head>
-<body>
+
+<body onload="refreshFooter()">
+
 <div class="gridContainer clearfix">
+
 	<div id="headertMenu">
   		<div id="headerBg"><img src="header_bg.png" alt="hbg"> 
   		</div>
   		<div id="juxpressPh"><img src="juxpress_pgheader.png" alt="jph">
   		</div>
-		<div id="headerLogo"><img src="juxpress_logo.png" alt="juxpress logo">
+        
+		<div class="onlyDesktop" id="headerLogo"><img src="juxpress_logo.png" alt="juxpress logo">
     	</div>
-    	<div id="calender"> 
+        
+        <div class="onlyMobile" id="headerIllustration"><img src="illustrationTopM.png" alt="iTM">
+    	</div>
+        
+        <div class="onlyMobile" id="overlayBIT"><img src="overlayBIllustM.png" alt="oBIM">
+    	</div>
+        
+        <div class="onlyMobile" id="overlayBlackTop"><li id="oBTItem"></li>
+    	</div>
+        
+    	<div class="onlyDesktop" id="calender"> 
 				<img src="calender.png" alt="calender">
             	<p id="datetime"></p>
-        		<script src="juxpress.js" type="text/javascript"></script>
-		</div>
-        <div id="illustationTop"><img src="illustation_top.png" alt="ilt">
+        		<script src="juxpress.js" type="text/javascript"></script>      
         </div>
-        <div id="overlayBITop"><img src="overlay_behindtillustration.png" alt="obit">
+        
+        <div class="onlyMobile" id="navbarTopM">
+        	<ul id="logoDivSignM" style="font-family:'League Spartan'; font-size:2.369vw">
+            	<li id="juxpressLogoM"><img src="juxpressLogoTopM.png" alt="jLTM"></li>
+                <li id="dividerTopM"><img src="dividerJLTRightM.png" alt="dJLTRM"></li>
+                <li id="signupTopM"><a id="stmItem">SIGN UP</a></li>
+            </ul>
+            
+            <div id="menuTopM">
+            	<div id="menuButtonM"><img src="menuButtonM.png" alt="mBM"></div>
+                <div id="mtItemsM">
+                	<div id="menuCloseButtonM"><img src="menuCloseButtonM.png" alt="mCBM"></div>
+                    <ul id="mliButtonsM" style="font-family:'League Spartan'; font-size:3.945vw">
+                    	<li class="listitemM" id="li1M"><a id="a1M">NEWS</a></li>
+        				<li class="listitemM" id="li2M"><a id="a2M">GALLERY</a></li>
+       					<li class="listitemM" id="li3M"><a id="a3M">ARCHIVE</a></li>
+       					<li class="listitemM" id="li4M"><a id="a4M">REACH US</a></li>
+                        <li class="listitemM" id="li5M"><img id="fbIconMenuM" src="fb_icon.png"></li>                 
+                    </ul>
+                    
+                    <ul id="overlayBMTM">
+                    	<li id="semiwhiteLeftBMTM"></li>
+                        <li id="blackMiddleBMTM"></li>
+                        <li id="semiwhiteRightBMTM"></li>
+                    </ul>
+                </div>
+            </div>  
+              
+        	<div id="calenderM"> 
+				<img src="calenderM.png" alt="calender">
+            	<p id="datetimeM"></p>
+        		<script src="juxpress.js" type="text/javascript"></script>        
+			</div>
         </div>
-   		<div id="hMenu">
+        
+        <div class="onlyDesktop" id="illustationTop"><img src="illustation_top.png" alt="ilt">
+        </div>
+        
+        <div class="onlyDesktop" id="overlayBITop"><img src="overlay_behindtillustration.png" alt="obit">
+        </div>
+   		<div class="onlyDesktop" id="hMenu">
     		<ul id="navBar" style="font-family:'League Spartan'; font-size:1.573vw">
         		<li class="listitem" id="li1"><a id="a1">NEWS</a></li>
         		<li class="listitem" id="li2"><a id="a2">GALLERY</a></li>
@@ -58,19 +111,38 @@ Do the following if you're using your customized build of modernizr (http://www.
         		<li class="listitem" id="li5"><a id="a5">SIGN UP</a></li>
         	</ul>
     	</div>
+        <div id="overlayUH"><img src="overlay_undermenu.png" alt="ouh">
+    	</div>
     </div>
-    <div id="overlayUH"><img src="overlay_undermenu.png" alt="ouh">
-    </div>
+    
+    
     <div id="headlines">
     	<div id="headlinesHeader">
-   		  	<ul id="ochreBox">
+          	<ul id="ochreBox">
         		<li id="blackBorder">  
             		<ul id="headlinesText"><a>HEADLINES:</a></ul>
            			<ul id="subblackLine1"></ul>          	
            	 	</li>
        	 	</ul>
         </div>
-        <ul id="headlineNews">
+        
+        <ul class="onlyMobile" id="headlinesMaskM">
+        	<div id="hmLeftM">
+            	<li id="hmWhiteLeftM"></li>
+            	<li id="hmSemiwhiteLeftM"></li>
+                <li id="hmLeftButtonM"><img src="leftButtonMidM.png" alt="lBMM"></li>
+                <script src="juxpress.js" type="text/javascript"></script> 
+            </div>
+            <div id="hmRightM">
+            	<li id="hmWhiteRightM"></li>
+            	<li id="hmSemiwhiteRightM"></li>
+                <li id="hmRightButtonM"><img src="rightButtonMidM.png" alt="rBMM"></li>
+                <script src="juxpress.js" type="text/javascript"></script> 
+            </div>
+         </ul>
+            
+        <ul class="translateContentM" id="headlineNews">
+        <script src="juxpress.js" type="text/javascript"></script>
         	<li class="headlineNewsitem" id="hNi1">
             	<ul class="newsBox">
                 	<li class="newsBoxheader"><a class="nbhText">Academics</a></li>
@@ -104,6 +176,16 @@ Do the following if you're using your customized build of modernizr (http://www.
         	<li id="blackBorder2"></li>
         </ul>
     </div>
+    
+    <div id="news">
+    
+    </div>
+    
+<!--Window/Document ends here
+    <div id="documentEnd">
+    </div>
+No JUxPress data except "footer" beyond this.-->
+     
     <div id="footer">
     	<div id="illustration">
         	<img id="illustrationPic" src="illustation_bottom.png" alt="bils">
@@ -128,7 +210,7 @@ Do the following if you're using your customized build of modernizr (http://www.
           		</ul>
           		<p id="creditsLove">Made with  <img id="loveImg" rel="icon" src="love_icon.png" alt="LOVE">  by JUxPress Team</p>
             </ul>
-        </div>
+		</div>
     </div>
 </div>
 </body>
