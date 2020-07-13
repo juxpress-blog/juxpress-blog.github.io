@@ -11,6 +11,10 @@ img, object, embed, video {
 	width:100%;
 }
 
+/*For checking al the borders:
+*{border:1px solid red;}*/
+
+
 /*
 	Dreamweaver Fluid Grid Properties
 	----------------------------------
@@ -29,16 +33,21 @@ img, object, embed, video {
 /* Mobile & Tablet Layout: 768px and below. */
 @media only screen and (max-width: 768px) {
 .gridContainer {
+	position:relative;
 	width: 100vw;
 	max-width: 768px;
+	min-height: 100vh;
 	padding-left: 0%;
 	padding-right: 0%;
+	clip-path:rectangle(0,0,100vw);
 }
 
 .onlyDesktop{
 visibility:hidden;
 display:none;
 }
+
+  #header&body{padding-bottom:3vw;}
 
 	#headerBg{
 	position: absolute;
@@ -48,6 +57,7 @@ display:none;
 	display: block;
 	width:170.425vw;
 	z-index:0;
+	
 	}
 	
 	#juxpressPh{
@@ -240,8 +250,6 @@ display:none;
 			}
 		
 		
-	
-	
 	#headlines{
 	position:absolute;
 	top:44vw;
@@ -261,7 +269,7 @@ display:none;
 		height:9.3283vw;
 		background-color:#ffcc66;
 		z-index:1;
-		}			
+		}
 			#blackBorder{
 			position:absolute;
 			border:#000;
@@ -305,7 +313,7 @@ display:none;
 			width:70.4948vw;
 			z-index:1;
 			}
-			
+	
 		#headlinesMaskM{
 		display:flex;
 		position:absolute;
@@ -372,7 +380,7 @@ display:none;
 				cursor:pointer;
 				z-index:1;
 				}
-		
+				
 		#headlineNews{
 		display:flex;
 		position:relative;
@@ -385,7 +393,6 @@ display:none;
 		margin-left:8.673vw;
 		z-index:-1;		
 		}
-	
 			.headlineNewsitem{
 			display:block;			
 			position:relative;
@@ -405,7 +412,7 @@ display:none;
 				margin:0vw;
 				max-width:100%;
 				max-height:100%;
-				}	
+				}
 					.newsBoxheader{
 					display:block;
 					position:relative;
@@ -419,7 +426,7 @@ display:none;
 						padding:1.49vw;
 						font-size:4.468vw;
 						color:#cc6666!important;
-						}	
+						}
 					.newsBoximage{
 					display:flex;
 					flex-direction:column;
@@ -437,7 +444,7 @@ display:none;
 						height:29.789vw;
 						width:auto;
 						margin:0%;
-					}
+						}
 					.newsBoxfooter{
 					display:block;
 					position:relative;
@@ -450,14 +457,14 @@ display:none;
 		#transparentBox{
 		position: relative;
 		display:block;		
-		list-style-type:none;		
+		list-style-type:none;
 		margin:0vw;
 		padding:0vw;
 		width:88.0208vw;
 		height:3.62vw;
 		margin-top:0vw;
 		z-index:1;
-		}		
+		}	
 			#blackBorder2{
 			position:relative;
 			border:#000;
@@ -467,6 +474,10 @@ display:none;
 			border-left:0.6703vw solid;
 			border-right:0.6703vw solid;
 			}
+				
+		
+	
+			
 			
 	/*Translating the content:*/
 	.translateContentM{
@@ -475,8 +486,7 @@ display:none;
 	cursor:pointer;
 	}
 	
-	
-/*Window/Document end here
+	/*Window/Document end here
 	#documentEnd{
 	display:block;
 	position:absolute;
@@ -487,34 +497,28 @@ display:none;
 	}
 No JUxPress data except "footer" beyond this*/
 
-	
 	#footer{
 	display:block;
 	position:absolute;
-	bottom:0vw;
 	}
 		#illustration{
-		display:block;
+		display:flex;
+		align-items:flex-end;
 		position:relative;
-		opacity:90%;
-		
+		opacity:90%;		
 		}
-			#illustrationPic{
+			#illustrationPicM{
 			display:block;
-			position:relative;
-			bottom:-22.63vw;
 			z-index:2;
 			}
-			#illustrationBg{
+			#illustrationBgM{
 			display:block;
-			position:absolute;
-			bottom:-22.63vw;
+			margin-left:-100vw;
 			z-index:1;
 			}
 		#bottomCredits{
 		display:block;
 		position:relative;
-		top:22.63vw;
 		width:100vw;
 		}
 			#creditswBg{
@@ -583,7 +587,7 @@ No JUxPress data except "footer" beyond this*/
 			}
 				#loveImg{
 				width:1.18vw;
-				}*/
+				}
 }
 
 /* Desktop Layout: 768px to a max of 3840px.  Inherits styles from: Mobile Layout and Tablet Layout. */
