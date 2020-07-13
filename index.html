@@ -3,7 +3,7 @@
 <!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
 <!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="">
+<html>
 <!--<![endif]-->
 <head>
 <title>JUxPress</title>
@@ -35,10 +35,12 @@ Do the following if you're using your customized build of modernizr (http://www.
 
 </head>
 
-<body onload="refreshFooter()">
+<body onload="refreshFooter()" style="overflow-x:hidden; scroll-behavior:smooth">
 
 <div class="gridContainer clearfix">
 
+  <div id="header&body">
+  
 	<div id="headertMenu">
   		<div id="headerBg"><img src="header_bg.png" alt="hbg"> 
   		</div>
@@ -180,7 +182,8 @@ Do the following if you're using your customized build of modernizr (http://www.
     <div id="news">
     
     </div>
-    
+  
+  </div>  
 <!--Window/Document ends here
     <div id="documentEnd">
     </div>
@@ -188,8 +191,12 @@ No JUxPress data except "footer" beyond this.-->
      
     <div id="footer">
     	<div id="illustration">
-        	<img id="illustrationPic" src="illustation_bottom.png" alt="bils">
-      		<img id="illustrationBg" src="overlay_behindbillustration.png" alt="obi"> 
+        	<img class="onlyDesktop" id="illustrationPic" src="illustation_bottom.png" alt="bils">
+            <img class="onlyMobile" id="illustrationPicM" src="illustrationBottomM.png" alt="bilsM">
+            
+      		<img class="onlyDesktop" id="illustrationBg" src="overlay_behindbillustration.png" alt="obi">
+            <img class="onlyMobile" id="illustrationBgM" src="overlayBIllustM.png" alt="obi">           
+            
         </div>
       	<div id="bottomCredits">
        		<ul id="creditswBg">
