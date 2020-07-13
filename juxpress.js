@@ -82,7 +82,7 @@ var dt = new Date();
 	
 //For refreshing footer:
 	
-function refreshFooter(){	
+/*function refreshFooter(){	
 
 setTimeout(function(){
 	var vw = window.innerWidth;
@@ -90,7 +90,7 @@ setTimeout(function(){
 	
 	//Calulating body height and using it to set the "top" value of Document ending:	
 			
-	var hl = document.getElementById("headlines");
+	/*var hl = document.getElementById("headlines");
 		var hlT = hl.getBoundingClientRect();
 	var ns = document.getElementById("news");
 		var nsT = ns.getBoundingClientRect();
@@ -100,7 +100,7 @@ setTimeout(function(){
 	/*var de = document.getElementById("documentEnd");	
 	de.style.top = hlT.top + hl.offsetHeight + ns.offsetHeight + "px" ;*/
 	
-	var fh = hlT.top + hl.offsetHeight + ns.offsetHeight;
+	/*var fh = hlT.top + hl.offsetHeight + ns.offsetHeight;
 		var fhpx = fh + "px";
 		var fhvw = fh/vw*100 + "vw";
 	
@@ -113,7 +113,7 @@ setTimeout(function(){
 	refreshFooter();
 },1)
 	
-}
+}*/
 
 
 //For translating content:
