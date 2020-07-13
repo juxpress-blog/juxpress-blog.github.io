@@ -27,20 +27,562 @@ img, object, embed, video {
 */
 
 /* Mobile & Tablet Layout: 768px and below. */
-
+@media only screen and (max-width: 768px) {
 .gridContainer {
-	margin-left: auto;
-	margin-right: auto;
-	width: 96%;
-	padding-left: 2%;
-	padding-right: 2%;
-}
-#LayoutDiv1 {
-	clear: both;
-	float: left;
-	margin-left: 0;
 	width: 100%;
+	max-width: 768px;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+.onlyDesktop{
+visibility:hidden;
+display:none;
+}
+
+	#headerBg{
+	position: absolute;
+	top:0%;
+	float: center;
+	margin-left:-35.2125vw;
 	display: block;
+	width:170.425vw;
+	z-index:0;
+	}
+	
+	#juxpressPh{
+	position: absolute;
+	margin-top:2.9%;
+	left:50vw;
+	margin-left:-24.414%;
+	max-width:51.172vw;
+	display:block;
+	z-index:1;
+	}
+	
+	#headerIllustration{
+	display:block;
+	position:absolute;
+	margin-top:13.867vw;
+	width:100vw;
+	opacity:90%;
+	z-index:0;
+	}
+	
+	#overlayBIT{
+	display:block;
+	position:absolute;
+	margin-top:15.234vw;
+	width:100vw;
+	z-index:-1;
+	}
+	
+	#overlayBlackTop{
+	display:block;
+	position:absolute;
+	margin-top:36vw;
+	width:100vw;
+	z-index:1;
+	}
+		#oBTItem{
+		display:block;
+		height:6.057vw;
+		width:100vw;
+		background-color:#000;
+		}
+		
+	#navbarTopM{
+	display:block;
+	position:absolute;
+	margin-top:32.8125vw;
+	width:100vw;
+	z-index:2;
+	}
+		#logoDivSignM{
+		display:flex;
+		position:relative;
+		float:left;
+		margin-left:8.151vw;
+		margin-top:0vw;
+		list-style-type:none;		
+		padding-left:0vw;
+		padding-right:0vw;
+		}
+			#juxpressLogoM{width:4.5573vw;}
+			#dividerTopM{
+			width:0.1953vw;
+			margin-left:1.6015vw;
+			}
+			#signupTopM{
+			display:block;
+			position:relative;
+			border:0.353vw solid #fff; 
+			background-color:#000;
+			margin-left:1.6015vw;
+			margin-top:0.9035vw;
+			height:4.453vw;
+			cursor:pointer;
+			}
+				#stmItem{
+				display:block;
+				color:#cc6666;
+				padding:1.0417vw;
+				}
+			
+		#menuTopM{
+		display:flex;
+		position:absolute;
+		margin-top:0vw;
+		padding:0vw;
+		width:100vw;
+		justify-content:center;
+		z-index:2;
+		}
+			#menuButtonM{
+			display:block;
+			visibility:visible;
+			opacity:1;
+			margin-top:1.1718vw;
+			width:7.9427vw;
+			cursor:pointer;
+			-webkit-transition: visibility 0.1s ease, opacity 0.1s ease;
+			transition: visibility 0.1s ease, opacity 0.1s ease;
+			}
+			
+			#mtItemsM{
+			display:none;
+			visibility:hidden;
+			width:5.794vw;			
+			}
+				#menuCloseButtonM{
+				margin-top:1.1718vw;
+				width:5.794vw;
+				cursor:pointer;
+				z-index:2;
+				}
+				
+				#mliButtonsM{
+				display: flex;
+				flex-direction:column;
+				align-items:center;
+				list-style-type:none;
+				padding-left:0vw;
+				padding-right:0vw;
+				margin-top:0vw;
+				margin-left:0vw;
+				background-color:#000;
+				width:50vw;
+				height:77.3437vw;
+				justify-content: space-evenly;
+				z-index: 2;
+				}
+					#mliButtonsM li{
+					display:flex;
+					flex-direction:column;
+					align-items:center;
+					position:relative;
+					border: 0.586vw solid #fff;
+					background-color:#000;
+					height:8.4635vw;
+					width:29.7916vw;
+					margin-top:0vw;
+					cursor:pointer;
+					}
+						#mliButtonsM a{
+						display:block;
+						color:#ffcc66;
+						padding-top:2.259vw;
+						padding-bottom:2.259vw;
+						}
+						#li5M{border:hidden!important;}
+						#fbIconMenuM{height:8.4635vw;}
+						
+				#overlayBMTM{
+				display:flex;
+				position:absolute;
+				justify-content:space-between;
+				list-style-type:none;
+				padding:0vw;
+				margin:0vw;
+				height:83.1353vw;
+				width:100vw;
+				z-index:1;
+				}
+					#semiwhiteLeftBMTM{
+					background-color:#fff;
+					opacity:30%;
+					width:25vw;
+					}
+					#blackMiddleBMTM{
+					background-color:#000;
+					width:50vw;
+					}#semiwhiteRightBMTM{
+					background-color:#fff;
+					opacity:30%;
+					width:25vw;
+					}
+				
+		#calenderM {
+		display:block;
+		float:right;
+		margin-right:8.5937vw;
+		width:11.914vw;
+		z-index:1;
+		}
+			#datetimeM {
+			display:block;
+			position:relative;
+			font-size:1.8219vw;
+			text-align:center;
+			margin-top:-4.005vw;			
+			color:#fff;
+			z-index:3;
+			}
+		
+		
+	
+	
+	#headlines{
+	position:absolute;
+	top:44vw;
+	display:block;
+	left:50vw;
+	margin-left:-44.6807vw;
+	margin-bottom:1vw;
+	z-index:1;
+	}
+		#ochreBox{
+		position:relative;
+		display:block;		
+		list-style-type:none;		
+		margin:0vw;
+		padding:0vw;
+		width:89.3614vw;
+		height:9.3283vw;
+		background-color:#ffcc66;
+		z-index:1;
+		}			
+			#blackBorder{
+			position:absolute;
+			border:#000;
+			height:50%;
+			width:88.0208vw;
+			border-top:0.6703vw solid;
+			border-left:0.6703vw solid;
+			border-right:0.6703vw solid;
+			}
+			#headlinesText{
+			position: absolute;
+			display:block;
+			float:none;
+			font-size:5.065vw;
+			height:5.065vw;
+			margin-top:0%;
+			margin-left:13.3094vw;
+			top:50%;
+			padding-top:0vw;
+			padding-left:1.43vw;
+			padding-right:1.43vw;
+			background-color:#ffcc66;
+			z-index:2;
+			}
+				#headlinesText a{
+				color:#000!important;
+				}
+			#subblackLine1{
+			position: absolute;
+			display:block;
+			float:none;
+			list-style-type:none;
+			margin-left:8.673vw;
+			padding-left:0vw;
+			padding-right:0vw;
+			margin-top:0%;
+			margin-bottom:0%;
+			top:90%;
+			background-color:#000;
+			height:1.43vw;
+			width:70.4948vw;
+			z-index:1;
+			}
+			
+		#headlinesMaskM{
+		display:flex;
+		position:absolute;
+		justify-content:space-between;
+		list-style-type:none;
+		width:89.3614vw;		
+		top:8.658vw;
+		margin-top:0vw;
+		padding:0vw;
+		z-index:0;
+		}
+			#hmLeftM{
+			display:flex;
+			align-items:center;					
+			}
+				#hmWhiteLeftM{
+				display:block;
+				width:5.9896vw;
+				margin-left:-5.9896vw;
+				padding:0vw;
+				background-color:#fff;
+				height:57.7339vw;
+				}
+				#hmSemiwhiteLeftM{
+				display:block;			
+				width:8.8vw;				
+				padding:0vw;
+				background-color:#fff;
+				opacity:0.5;
+				height:58.7339vw;
+				}
+				#hmLeftButtonM{
+				display:block;
+				width:4.6875vw;
+				margin-left:-4.6875vw;
+				cursor:pointer;
+				z-index:3;
+				}
+			#hmRightM{
+			display:flex;
+			flex-direction:row-reverse;
+			align-items:center;		
+			}
+				#hmWhiteRightM{
+				display:block;				
+				width:5.9896vw;
+				margin-right:-5.9896vw;
+				padding:0vw;
+				background-color:#fff;
+				height:58.7339vw;
+				}
+				#hmSemiwhiteRightM{
+				display:block;				
+				width:8.8vw;		
+				padding:0vw;
+				background-color:#fff;
+				opacity:0.5;
+				height:58.7339vw;
+				}
+			    #hmRightButtonM{
+				display:block;
+				width:4.6875vw;
+				margin-right:-4.6875vw;
+				cursor:pointer;
+				z-index:1;
+				}
+		
+		#headlineNews{
+		display:flex;
+		position:relative;
+		list-style-type:none;		
+		padding-top:1.7578vw;
+		padding-left:0vw;
+		padding-right:0vw;
+		margin-top:0%;
+		margin-bottom:0%;
+		margin-left:8.673vw;
+		z-index:-1;		
+		}
+	
+			.headlineNewsitem{
+			display:block;			
+			position:relative;
+			float:left;
+			width:55.859vw;
+			height:52.103vw;
+			border:0.6703vw solid #000;
+			margin-left:7.3177vw; 	
+			}
+				.newsBox{
+				display:flex;
+				flex-direction:column;
+				align-items:center;				
+				justify-content:space-between;
+				list-style-type:none;
+				padding:0vw;
+				margin:0vw;
+				max-width:100%;
+				max-height:100%;
+				}	
+					.newsBoxheader{
+					display:block;
+					position:relative;
+					height:7.447vw;					
+					border-bottom:0.6703vw solid #000;
+					background-color:#000;
+					width:57.1996vw;
+					}
+						.nbhText{
+						display:block;
+						padding:1.49vw;
+						font-size:4.468vw;
+						color:#cc6666!important;
+						}	
+					.newsBoximage{
+					display:flex;
+					flex-direction:column;
+					align-items:center;					
+					position:relative;
+					border:0.6703vw solid #000;
+					height:29.789vw;
+					min-width:29.789vw;					
+					margin:0.669vw;
+					vertical-align:middle;
+					}
+						.newsBoximage img{
+						display:block;
+						position:relative;						
+						height:29.789vw;
+						width:auto;
+						margin:0%;
+					}
+					.newsBoxfooter{
+					display:block;
+					position:relative;
+					height:11.0911vw;
+					border-top:0.6703vw solid #000;
+					background-color:#ffcc66;
+					width:57.1996vw;
+					z-index:-1;
+					}
+		#transparentBox{
+		position: relative;
+		display:block;		
+		list-style-type:none;		
+		margin:0vw;
+		padding:0vw;
+		width:88.0208vw;
+		height:3.62vw;
+		margin-top:0vw;
+		z-index:1;
+		}		
+			#blackBorder2{
+			position:relative;
+			border:#000;
+			height:50%;
+			width:100%;
+			border-bottom:0.6703vw solid;
+			border-left:0.6703vw solid;
+			border-right:0.6703vw solid;
+			}
+			
+	/*Translating the content:*/
+	.translateContentM{
+	-webkit-trasition: transform 1s ease;
+	transition: transform 1s ease;
+	cursor:pointer;
+	}
+	
+	
+/*Window/Document end here
+	#documentEnd{
+	display:block;
+	position:absolute;
+	background-color:#ff6666;
+	width:100vw;
+	height:5vw;
+	
+	}
+No JUxPress data except "footer" beyond this*/
+
+	
+	#footer{
+	display:block;
+	position:absolute;
+	}
+		#illustration{
+		display:block;
+		position:relative;
+		opacity:90%;
+		
+		}
+			#illustrationPic{
+			display:block;
+			position:relative;
+			bottom:-22.63vw;
+			z-index:2;
+			}
+			#illustrationBg{
+			display:block;
+			position:absolute;
+			bottom:-22.63vw;
+			z-index:1;
+			}
+		#bottomCredits{
+		display:block;
+		position:relative;
+		top:22.63vw;
+		width:100vw;
+		}
+			#creditswBg{
+			display:flex;
+			flex-direction:column;
+			align-items:center;	
+			position:absolute;
+			list-style-type:none;
+			width:100vw;
+			background-color:#000;
+			margin:0%;
+			padding:0%;
+			vertical-align:middle;
+			}
+				#logowOthers{
+				display:flex;
+				justify-content: space-evenly;
+				position:relative;
+				list-style-type:none;
+				width:100vw;
+				margin-top:3vw;
+				padding:0%;				
+				}	
+					#logoBottom{
+					display:block;
+					width:6.4vw;
+					}
+					#middleListBottom{
+					display:flex;
+					flex-direction:column;
+					justify-content:space-between;
+					max-height:9.791vw;
+					}
+						.mlbItem{
+						display:block;
+						font-size:1.0156vw;
+						color:#FFF;
+						}
+					#middleListRight{
+					display:flex;
+					flex-direction:column;
+					justify-content:space-between;
+					max-height:9.791vw;
+					}
+						.mlrItem{
+						display:block;
+						font-size:1.0156vw;
+						color:#FFF;
+						}
+						#mlri2{
+						color: #ffcc66!important;
+						}
+						#fbIcon{
+						width:2.03vw;
+						}
+			#creditsLove{
+			position:relative;
+			color: #FFF;
+			font-family:"Leelawadee UI";
+			font-weight:200;
+			font-size:0.91vw;
+			margin-top:2.031vw;
+			margin-bottom:4vw;
+			padding:0%;
+			text-align: center;	
+			}
+				#loveImg{
+				width:1.18vw;
+				}*/
 }
 
 /* Desktop Layout: 768px to a max of 3840px.  Inherits styles from: Mobile Layout and Tablet Layout. */
@@ -53,8 +595,10 @@ img, object, embed, video {
 	padding-right: 0%;
 }
 
-
-
+.onlyMobile{
+visibility:hidden;
+display:none;
+}
 
 	#headerBg {
 	position: absolute;
@@ -111,6 +655,7 @@ img, object, embed, video {
 	display:block;
 	position:absolute;
 	margin-top:6.4323vw;
+	opacity:90%;
 	z-index:0;
 	}
 	
@@ -158,15 +703,15 @@ img, object, embed, video {
 		#a5{color:#FFF!important;}
 		
 
-	#overlayUH {
-	position: absolute;
-	top:21.796vw;
-	clear: both;
-	float: left;
-	margin-left: 0;
-	display: block;
-	max-width:100%;
-	z-index:0;
+		#overlayUH {
+		position: absolute;
+		top:21.796vw;
+		clear: both;
+		float: left;
+		margin-left: 0;
+		display: block;
+		max-width:100%;
+		z-index:0;
 	}
 	
 	
@@ -271,7 +816,7 @@ img, object, embed, video {
 					height:2.604vw;
 					border-bottom:0.234vw solid #000;
 					background-color:#000;
-					width:100%;
+					width:19.968vw;
 					}
 						.nbhText{
 						display:block;
