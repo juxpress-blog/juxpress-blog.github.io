@@ -29,7 +29,7 @@ img, object, embed, video {
 /* Mobile & Tablet Layout: 768px and below. */
 @media only screen and (max-width: 768px) {
 .gridContainer {
-	width: 100%;
+	width: 100vw;
 	max-width: 768px;
 	padding-left: 0%;
 	padding-right: 0%;
@@ -491,6 +491,7 @@ No JUxPress data except "footer" beyond this*/
 	#footer{
 	display:block;
 	position:absolute;
+	bottom:0vw;
 	}
 		#illustration{
 		display:block;
@@ -874,6 +875,7 @@ display:none;
 	#footer{
 	display:block;
 	position:absolute;
+	bottom:0vw;
 	}
 		#illustration{
 		display:block;
