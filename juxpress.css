@@ -39,8 +39,7 @@ img, object, embed, video {
 	max-width: 768px;
 	min-height: 100vh;
 	padding-left: 0%;
-	padding-right: 0%;
-	clip-path:rectangle(0,0,100vw);
+	padding-right: 0%;	
 }
 
 .onlyDesktop{
@@ -248,15 +247,24 @@ display:none;
 			z-index:3;
 			}
 		
+		#overlayUHM{
+		display:block;
+		position:absolute;
+		width:100vw;
+		top:47vw;
+		z-index:1;
+		}
 		
 	#headlines{
-	position:absolute;
-	top:47vw;
 	display:block;
+	position:absolute;
+	top:47vw;	
 	left:50vw;
 	margin-left:-44.6807vw;
 	margin-bottom:1vw;
-	z-index:1;
+	width:100vw;
+	clip-path:inset(0vw 10.6386vw 0vw 0vw);
+	z-index:2;
 	}
 		#ochreBox{
 		position:relative;
