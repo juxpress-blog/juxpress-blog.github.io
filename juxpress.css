@@ -33,6 +33,13 @@ img, object, embed, video {
 
 /* Mobile & Tablet Layout: 768px and below. */
 @media only screen and (max-width: 768px) {
+
+body{
+position: fixed;
+min-height: 100vh;
+}
+
+
 .gridContainer {
 	position:relative;
 	width: 100vw;
