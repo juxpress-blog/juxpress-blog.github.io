@@ -48,8 +48,6 @@ visibility:hidden;
 display:none;
 }
 
-  #header&body{padding-bottom:3vw;}
-
 	#headerBg{
 	position: absolute;
 	top:0%;
@@ -253,7 +251,7 @@ display:none;
 		
 	#headlines{
 	position:absolute;
-	top:44vw;
+	top:47vw;
 	display:block;
 	left:50vw;
 	margin-left:-44.6807vw;
