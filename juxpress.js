@@ -91,8 +91,6 @@ var dt = new Date();
 			
 function bodyOnload(){	
 	
-window.scrollTo(0,1);
-	
 setTimeout(function(){	
 	
 	//Calulating body height and using it to set the "top" value of Document ending:	
