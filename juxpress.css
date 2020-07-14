@@ -14,6 +14,7 @@ img, object, embed, video {
 /*For checking al the borders:
 *{border:1px solid red;}*/
 
+*{-webkit-tap-highlight-color:rgba(0,0,0,0.0.1);}
 
 /*
 	Dreamweaver Fluid Grid Properties
@@ -534,59 +535,79 @@ No JUxPress data except "footer" beyond this*/
 			vertical-align:middle;
 			}
 				#logowOthers{
-				display:flex;
-				justify-content: space-evenly;
+				display:block;
+				
 				position:relative;
 				list-style-type:none;
 				width:100vw;
-				margin-top:3vw;
+				margin-top:0vw;
 				padding:0%;				
 				}	
 					#logoBottom{
 					display:block;
-					width:6.4vw;
+					float:left;
+					/*margin-top:37.316vw;*/
+					margin-top:17vw;
+					margin-left:15vw;
+					width:20vw;
 					}
 					#middleListBottom{
-					display:flex;
-					flex-direction:column;
-					justify-content:space-between;
-					max-height:9.791vw;
+					display:block;
+					position:relative;
+					float:right;
+					margin-top:8vw;
+					margin-right:15vw;					
 					}
 						.mlbItem{
 						display:block;
-						font-size:1.0156vw;
+						margin-bottom:3vw;
+						font-size:2.148vw;
+						width:25vw;
 						color:#FFF;
-						}
+						}						
+						#bottomMenuDividerM{
+						display:block;
+						float:right;
+						width:25vw;
+						margin-right:-25vw;
+						margin-top:31.5vw;
+						height:0.3906vw;
+						background-color:#ffcc66;
+						}	
+						
 					#middleListRight{
-					display:flex;
-					flex-direction:column;
-					justify-content:space-between;
-					max-height:9.791vw;
+					display:block;
+					position:relative;
+					float:right;
+					margin-top:37.316vw;
+					margin-right:-25vw;		
 					}
 						.mlrItem{
 						display:block;
-						font-size:1.0156vw;
+						margin-bottom:3vw;
+						font-size:2.148vw;
+						width:25vw;
 						color:#FFF;
 						}
 						#mlri2{
 						color: #ffcc66!important;
 						}
 						#fbIcon{
-						width:2.03vw;
+						width:5vw;
 						}
 			#creditsLove{
 			position:relative;
 			color: #FFF;
 			font-family:"Leelawadee UI";
 			font-weight:200;
-			font-size:0.91vw;
-			margin-top:2.031vw;
-			margin-bottom:4vw;
+			font-size:2.6026vw;
+			margin-top:13vw;
+			margin-bottom:9vw;
 			padding:0%;
 			text-align: center;	
 			}
 				#loveImg{
-				width:1.18vw;
+				width:3.3748vw;
 				}
 }
 
