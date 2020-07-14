@@ -1,0 +1,8 @@
+{
+	"short_name": "JUxPress",
+	"name": "JUxPress",
+	
+	"start_url": "index.html",
+	"display":"standalone"
+	
+}
