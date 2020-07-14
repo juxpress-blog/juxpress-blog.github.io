@@ -465,11 +465,11 @@ display:none;
 		position: relative;
 		display:block;		
 		list-style-type:none;
-		margin:0vw;
+		margin-top:0vw;
+		margin-bottom:4vw;
 		padding:0vw;
 		width:88.0208vw;
 		height:3.62vw;
-		margin-top:0vw;
 		z-index:1;
 		}	
 			#blackBorder2{
