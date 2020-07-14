@@ -1,5 +1,6 @@
 // JavaScript Document
 
+
 var dt = new Date();
 			if(dt.getDate()>=10&&dt.getMonth()>=10){
 			document.getElementById("datetime").innerHTML = ((dt.getDate())+"/"+(dt.getMonth()+1));
@@ -88,8 +89,10 @@ var dt = new Date();
 		var hlT = hl.getBoundingClientRect();
 		var a = hlT.top;
 			
-function refreshFooter(){	
-
+function bodyOnload(){	
+	
+window.scrollTo(0,1);
+	
 setTimeout(function(){	
 	
 	//Calulating body height and using it to set the "top" value of Document ending:	
@@ -112,7 +115,7 @@ setTimeout(function(){
 	if(fh>=window.innerHeight){ft.style.top=fhpx;}
 	else{ft.style.top="100vh";}
 	
-	refreshFooter();
+	bodyOnload();
 },1)
 	
 }
