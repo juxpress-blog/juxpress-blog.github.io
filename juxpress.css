@@ -33,6 +33,11 @@ img, object, embed, video {
 
 /* Mobile & Tablet Layout: 768px and below. */
 @media only screen and (max-width: 768px) {
+body{
+	min-height:100vh;
+	position:fixed;
+}
+
 .gridContainer {
 	position:relative;
 	width: 100vw;
@@ -906,29 +911,26 @@ display:none;
 	#footer{
 	display:block;
 	position:absolute;
-	bottom:0vw;
 	}
 		#illustration{
-		display:block;
+		display:flex;
+		align-items:flex-end;
 		position:relative;
 		opacity:90%;
 		
 		}
 			#illustrationPic{
 			display:block;
-			position:relative;
-			bottom:-22.63vw;
 			z-index:2;
 			}
 			#illustrationBg{
 			display:block;
-			position:absolute;
-			bottom:-22.63vw;
+			margin-left:-100vw;
 			z-index:1;
 			}
 		#bottomCredits{
 		display:block;
-		position:relative;
+		position:absolute;
 		top:22.63vw;
 		width:100vw;
 		}
