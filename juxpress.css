@@ -14,7 +14,7 @@ img, object, embed, video {
 /*For checking al the borders:
 *{border:1px solid red;}*/
 
-{-webkit-tap-highlight-color:rgba(0,0,0,0.1);}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0.1);}
 
 /*
 	Dreamweaver Fluid Grid Properties
